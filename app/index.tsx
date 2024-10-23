@@ -30,6 +30,8 @@ export default function Index() {
     const note = await AsyncStorage.getItem("color");
     if(note){
       setTheme(note)
+    }else {
+      setTheme('')
     }
   };
 
